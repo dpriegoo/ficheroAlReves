@@ -12,9 +12,9 @@ import java.util.ArrayList;
 public class principal {
 
 	public static void main(String[] args) {
-		File fichero = new File("fch1.txt");
+		File fichero = new File("FicheroAlReves/fch1.txt");
 		File fichero2 = new File("fch2.txt");
-		File fDiff = new File("diferencias.txt");
+		File fDiff = new File("FicheroAlReves/diferencias.txt");
 		lecturaComparada(fichero, fichero2, fDiff);
 	}
 
@@ -39,8 +39,7 @@ public class principal {
 				lineaLeida1=bufFch.readLine();
 				if (i==iCont && iCont>1) {
 					
-					bufFch3.append(lineaLeida1+"\n");
-					System.out.println(lineaLeida1+"\n");
+					bufFch3.append(lineaLeida1+"\n");					
 					iCont--;
 					i=0;
 					bufFch = new BufferedReader(new FileReader(fichero));
